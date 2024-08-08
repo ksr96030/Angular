@@ -1,0 +1,29 @@
+<!-- src/app/customers/create-customer/create-customer.component.html -->
+<h2>Create Customer</h2>
+<form (ngSubmit)="onSubmit()">
+  <div>
+    <label for="username">Username</label>
+    <input type="text" id="username" [(ngModel)]="customer.username" name="username" required>
+  </div>
+  <div>
+    <label for="password">Password</label>
+    <input type="password" id="password" [(ngModel)]="customer.password" name="password" required>
+  </div>
+  <div>
+    <label for="firstName">First Name</label>
+    <input type="text" id="firstName" [(ngModel)]="customer.firstName" name="firstName" required>
+  </div>
+  <div>
+    <label for="lastName">Last Name</label>
+    <input type="text" id="lastName" [(ngModel)]="customer.lastName" name="lastName" required>
+  </div>
+  <div>
+    <label for="email">Email</label>
+    <input type="email" id="email" [(ngModel)]="customer.email" name="email" required>
+  </div>
+  <div>
+    <label for="subscriptionType">Subscription Type</label>
+    <input type="text" id="subscriptionType" [(ngModel)]="customer.subscriptionType" name="subscriptionType" required>
+  </div>
+  <button type="submit">Create Customer</button>
+</form>
